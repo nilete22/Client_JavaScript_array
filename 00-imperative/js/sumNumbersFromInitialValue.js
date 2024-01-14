@@ -15,6 +15,7 @@ const sumNumbersFromInitialValue = function (numbers, initial) {
   for (let index = 0; index < collectionLength; index++) {
     sum += numbers[index];
   }
+  
   return sum;
 };
 
