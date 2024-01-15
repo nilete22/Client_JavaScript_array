@@ -8,9 +8,12 @@
 
 const MONKEYS = ["🐒", "🦍", "🦧"];
 
-export const feedMonkeys = (fruit) => {
-  const monkeys = MONKEYS.map((monkey) => {
-    const feedMonkey = `${monkey} ${fruit}`;
-    return feedMonkey;
+const feedMonkeys = function (fruit) {
+  const monkeysFruit = MONKEYS.map((element) => {
+    return `${element} ${fruit}`;
   });
+
+  return monkeysFruit;
 };
+
+export default feedMonkeys;
