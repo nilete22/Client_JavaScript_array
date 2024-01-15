@@ -7,3 +7,15 @@
  */
 
 const MONKEYS = ["🐒", "🦍", "🦧"];
+
+export const feedMonkeys = function (fruit) {
+  const monkeys = [];
+  const collectionLenght = MONKEYS.length;
+
+  for (let index = 0; index < collectionLenght; index++) {
+    const monkey = `${MONKEYS[index]} ${fruit}`;
+    monkeys.push(monkey);
+  }
+
+  return monkeys;
+};
