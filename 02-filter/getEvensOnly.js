@@ -5,3 +5,13 @@
  */
 
 const COUNTERS = [2, 25, 43, 12, 67, 42, 28];
+
+const getEvensOnly = (COUNTERS) => {
+  const evenNumbers = (number) => {
+    return number % 2 === 0;
+  };
+
+  return COUNTERS.filter(evenNumbers);
+};
+
+export default getEvensOnly;
